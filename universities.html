@@ -32,36 +32,120 @@
     <div class="container">
       <h2 class="text-center">Featured Universities</h2>
       <div class="row mt-4">
+        <!-- Harvard -->
         <div class="col-md-4">
           <div class="card">
             <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Harvard">
             <div class="card-body">
               <h5 class="card-title">Harvard University</h5>
               <p class="card-text">Ranked among the top globally for research and innovation.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#harvardModal">View Details</button>
             </div>
           </div>
         </div>
+
+        <!-- Stanford -->
         <div class="col-md-4">
           <div class="card">
             <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Stanford">
             <div class="card-body">
               <h5 class="card-title">Stanford University</h5>
               <p class="card-text">Famed for its tech focus and vibrant campus life.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#stanfordModal">View Details</button>
             </div>
           </div>
         </div>
+
+        <!-- Cambridge -->
         <div class="col-md-4">
           <div class="card">
             <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Cambridge">
             <div class="card-body">
               <h5 class="card-title">Cambridge University</h5>
               <p class="card-text">Renowned for its academic rigor and historic appeal.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cambridgeModal">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <!-- MIT -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="MIT">
+            <div class="card-body">
+              <h5 class="card-title">MIT</h5>
+              <p class="card-text">World leader in engineering and computer science education.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mitModal">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oxford -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Oxford">
+            <div class="card-body">
+              <h5 class="card-title">University of Oxford</h5>
+              <p class="card-text">A timeless hub of knowledge and academic excellence.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#oxfordModal">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Melbourne -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Melbourne">
+            <div class="card-body">
+              <h5 class="card-title">University of Melbourne</h5>
+              <p class="card-text">Top university in Australia with a global impact.</p>
+              <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#melbourneModal">View Details</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Modal Templates -->
+  <div class="modal fade" id="harvardModal" tabindex="-1" aria-labelledby="harvardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="harvardModalLabel">Harvard University</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Ranked #1 in innovation globally.</li>
+            <li>Located in Cambridge, MA, USA.</li>
+            <li>Offers top programs in law, business, and medicine.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add similar modals for other universities -->
+  <div class="modal fade" id="stanfordModal" tabindex="-1" aria-labelledby="stanfordModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="stanfordModalLabel">Stanford University</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Located in the heart of Silicon Valley.</li>
+            <li>Famed for programs in technology and entrepreneurship.</li>
+            <li>Strong ties with top tech companies.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
