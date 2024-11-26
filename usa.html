@@ -6,6 +6,13 @@
   <title>USA Universities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    .navbar-toggler {
+  border: 1px solid white; /* Border color for the toggle button */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
     .university-list {
       margin-top: 30px;
     }
@@ -24,49 +31,99 @@
       text-align: center;
       margin-bottom: 30px;
     }
-    .card img {
-      height: 200px;
-      object-fit: cover;
+    
+    body{
+      background-color:#5A6C57;
+      /* color: white; */
     }
     .card {
-      margin-bottom: 20px;
+    height: 35rem; /* Set a consistent height */
+    width: 100%; /* Allow cards to adapt to column width */
+    background-color: #1F4529; /* Keep the same background for consistency */
+    color: white; /* Ensure text is readable */
+    
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    height: 200px; /* Ensure consistent image height */
+    object-fit: cover; /* Maintain aspect ratio and fill the image container */
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px; /* Adjust to fill remaining space below the image */
+  }
+  .list-group-item{
+    background-color: #D3F1DF;
+  }
+  
+  .footer {
+      background-color: #1F4529;
+      color: white;
+      padding: 20px 0;
+    }
+    .footer a {
+      color: #f8f9fa;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .university-item{
+      color: white;
     }
   </style>
 </head>
 <body>
   <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
-      <a class="navbar-brand" href="index.html">StudyAbroad</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <div>
+        <a class="navbar-brand" style="color: white;" href="index.html">
+          <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="border-color: white;"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="countries.html">Countries</a></li>
-          <li class="nav-item"><a class="nav-link" href="universities.html">Universities</a></li>
-          <li class="nav-item"><a class="nav-link" href="requirements.html">Requirements</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.html">Countries</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.html">Universities</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.html">Requirements</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="login.html">Log in</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- University List Section -->
-  <div class="container university-list">
-    <h2 class="text-center">Universities in the USA</h2>
+  <div class="container university-list my-5">
+    <h2 class="text-center text-light">Universities in the USA</h2>
     <div class="university-item d-flex justify-content-between align-items-center">
       <span>Harvard University</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#harvardModal">View Courses</button>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#harvardModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
       <span>Stanford University</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#stanfordModal">View Courses</button>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#stanfordModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
       <span>MIT (Massachusetts Institute of Technology)</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mitModal">View Courses</button>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#mitModal">View Courses</button>
     </div>
   </div>
 
@@ -84,19 +141,19 @@
           <ul>
             <li>
               Engineering
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Business Administration
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Law
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Medicine
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
           </ul>
         </div>
@@ -116,19 +173,19 @@
           <ul>
             <li>
               Engineering
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Psychology
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Economics
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Artificial Intelligence
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
           </ul>
         </div>
@@ -148,19 +205,19 @@
           <ul>
             <li>
               Data Science
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Mechanical Engineering
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Aerospace Engineering
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
             <li>
               Robotics
-              <button class="btn btn-outline-primary btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
+              <button class="btn btn-outline-success btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#degreeModal">View Degrees</button>
             </li>
           </ul>
         </div>
@@ -177,7 +234,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body text-center">
-          <a href="#" class="btn btn-primary m-2">Master's</a>
+          <a href="#" class="btn btn-success m-2">Master's</a>
           <a href="#" class="btn btn-secondary m-2">Bachelor's</a>
         </div>
       </div>
@@ -188,12 +245,12 @@
 
   <!-- Cost of Living Section -->
   <section class="container cost-living-section">
-    <h2>Cost of Living & Facilities</h2>
+    <h2 class="text-light">Cost of Living & Facilities</h2>
     <div class="row">
       <!-- Cost of Living -->
       <div class="col-md-6">
         <div class="card shadow">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Cost of Living">
+          <img src="/images/colU.webp" class="card-img-top" alt="Cost of Living">
           <div class="card-body">
             <h5 class="card-title">Cost of Living</h5>
             <p class="card-text">Learn about average living costs in the United States:</p>
@@ -210,7 +267,7 @@
       <!-- Facilities -->
       <div class="col-md-6">
         <div class="card shadow">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Facilities">
+          <img src="/images/facUsa.jpg" class="card-img-top" alt="Facilities">
           <div class="card-body">
             <h5 class="card-title">Facilities</h5>
             <p class="card-text">Explore the facilities available for international students:</p>
@@ -228,12 +285,12 @@
   </section>
 
 
-  <section class="py-5 bg-light">
+  <section class="py-5">
     <div class="container">
-      <h2 class="section-title">Steps to Study in the USA from Bangladesh</h2>
+      <h2 class="section-title text-light my-3">Steps to Study in the USA from Bangladesh</h2>
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <ol class="list-group list-group-numbered">
+          <ol class="list-group list-group-numbered" style="background-color: #1F4529;" >
             <li class="list-group-item">
               <strong>Research and Select Universities:</strong> Identify universities that offer your desired program and match your budget and preferences.
             </li>
@@ -262,8 +319,17 @@
         </div>
       </div>
     </div>
+
   </section>
   
+  <footer class="footer text-center text-white py-3">
+    <div class="container">
+      <p>&copy; 2024 Globescholar. All Rights Reserved.</p>
+      <p><a href="#" class="text-white">Privacy Policy</a> | <a href="#" class="text-white">Terms of Use</a></p>
+    </div>
+  </footer>
+
+   
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

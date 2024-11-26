@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UK Universities</title>
+  <title>Germany Universities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .university-list {
@@ -35,19 +35,31 @@
 </head>
 <body>
   <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
-      <a class="navbar-brand" href="index.html">StudyAbroad</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <div>
+        <a class="navbar-brand" style="color: white;" href="index.html">
+          <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="border-color: white;"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="countries.html">Countries</a></li>
-          <li class="nav-item"><a class="nav-link" href="universities.html">Universities</a></li>
-          <li class="nav-item"><a class="nav-link" href="requirements.html">Requirements</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.html">Countries</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.html">Universities</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.html">Requirements</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="login.html">Log in</a></li>
         </ul>
       </div>
     </div>
@@ -55,36 +67,56 @@
 
   <!-- University List Section -->
   <div class="container university-list">
-    <h2 class="text-center">Top Universities in the UK</h2>
+    <h2 class="text-center">Top Universities in Germany</h2>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>University of Oxford</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#oxfordModal">View Courses</button>
+      <span>Ludwig Maximilian University of Munich</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#munichModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>University of Cambridge</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#cambridgeModal">View Courses</button>
+      <span>Technical University of Munich</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#techMunichModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>Imperial College London</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#imperialModal">View Courses</button>
+      <span>Heidelberg University</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#heidelbergModal">View Courses</button>
     </div>
   </div>
 
   <!-- Modals -->
 
-  <!-- Oxford Modal -->
-  <div class="modal fade" id="oxfordModal" tabindex="-1" aria-labelledby="oxfordModalLabel" aria-hidden="true">
+  <!-- Ludwig Maximilian University Modal -->
+  <div class="modal fade" id="munichModal" tabindex="-1" aria-labelledby="munichModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="oxfordModalLabel">University of Oxford - Available Courses</h5>
+          <h5 class="modal-title" id="munichModalLabel">Ludwig Maximilian University of Munich - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Philosophy, Politics, and Economics</li>
             <li>Law</li>
-            <li>Medicine</li>
+            <li>Physics</li>
+            <li>Political Science</li>
+            <li>Biochemistry</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technical University of Munich Modal -->
+  <div class="modal fade" id="techMunichModal" tabindex="-1" aria-labelledby="techMunichModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="techMunichModalLabel">Technical University of Munich - Available Courses</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Engineering</li>
+            <li>Computer Science</li>
+            <li>Aerospace Engineering</li>
             <li>Data Science</li>
           </ul>
         </div>
@@ -92,40 +124,20 @@
     </div>
   </div>
 
-  <!-- Cambridge Modal -->
-  <div class="modal fade" id="cambridgeModal" tabindex="-1" aria-labelledby="cambridgeModalLabel" aria-hidden="true">
+  <!-- Heidelberg University Modal -->
+  <div class="modal fade" id="heidelbergModal" tabindex="-1" aria-labelledby="heidelbergModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="cambridgeModalLabel">University of Cambridge - Available Courses</h5>
+          <h5 class="modal-title" id="heidelbergModalLabel">Heidelberg University - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Engineering</li>
-            <li>Computer Science</li>
-            <li>Biochemistry</li>
+            <li>Biology</li>
+            <li>Medicine</li>
+            <li>Philosophy</li>
             <li>Mathematics</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Imperial Modal -->
-  <div class="modal fade" id="imperialModal" tabindex="-1" aria-labelledby="imperialModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="imperialModalLabel">Imperial College London - Available Courses</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>Aeronautical Engineering</li>
-            <li>Business Analytics</li>
-            <li>Life Sciences</li>
-            <li>Physics</li>
           </ul>
         </div>
       </div>
@@ -143,10 +155,10 @@
           <div class="card-body">
             <h5 class="card-title">Cost of Living</h5>
             <ul>
-              <li>Monthly Rent: £600 - £1,500</li>
-              <li>Groceries: £200 - £400</li>
-              <li>Transportation: £70 - £120</li>
-              <li>Utilities: £100 - £200</li>
+              <li>Monthly Rent: €500 - €1,200</li>
+              <li>Groceries: €150 - €300</li>
+              <li>Transportation: €70 - €100</li>
+              <li>Utilities: €150 - €250</li>
             </ul>
           </div>
         </div>
@@ -159,10 +171,10 @@
           <div class="card-body">
             <h5 class="card-title">Facilities</h5>
             <ul>
-              <li>Scholarships</li>
               <li>Student Housing</li>
               <li>Health Insurance</li>
               <li>Work Opportunities</li>
+              <li>International Scholarships</li>
             </ul>
           </div>
         </div>
@@ -173,14 +185,14 @@
   <!-- Steps to Study -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title">Steps to Study in the UK</h2>
+      <h2 class="section-title">Steps to Study in Germany</h2>
       <ol class="list-group list-group-numbered">
         <li class="list-group-item">Research universities and programs.</li>
         <li class="list-group-item">Pass English language tests (IELTS/TOEFL).</li>
-        <li class="list-group-item">Apply through UCAS or directly to universities.</li>
-        <li class="list-group-item">Secure financial proof for tuition and living costs.</li>
-        <li class="list-group-item">Apply for a Tier 4 (Student) visa.</li>
-        <li class="list-group-item">Plan accommodations and healthcare.</li>
+        <li class="list-group-item">Apply through university websites or the UniAssist portal.</li>
+        <li class="list-group-item">Provide proof of financial support (for tuition and living expenses).</li>
+        <li class="list-group-item">Apply for a student visa or residence permit.</li>
+        <li class="list-group-item">Secure student housing and health insurance.</li>
       </ol>
     </div>
   </section>

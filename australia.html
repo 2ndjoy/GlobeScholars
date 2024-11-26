@@ -6,6 +6,15 @@
   <title>Australia Universities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    
+    
+    .navbar-toggler {
+  border: 1px solid white; /* Border color for the toggle button */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
     .university-list {
       margin-top: 30px;
     }
@@ -24,49 +33,100 @@
       text-align: center;
       margin-bottom: 30px;
     }
-    .card img {
-      height: 200px;
-      object-fit: cover;
+    
+    body{
+      background-color:#5A6C57;
+      /* color: white; */
     }
     .card {
-      margin-bottom: 20px;
+    height: 35rem; /* Set a consistent height */
+    width: 100%; /* Allow cards to adapt to column width */
+    background-color: #1F4529; /* Keep the same background for consistency */
+    color: white; /* Ensure text is readable */
+    
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    height: 200px; /* Ensure consistent image height */
+    object-fit: cover; /* Maintain aspect ratio and fill the image container */
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px; /* Adjust to fill remaining space below the image */
+  }
+  .list-group-item{
+    background-color: #D3F1DF;
+  }
+  
+  .footer {
+      background-color: #1F4529;
+      color: white;
+      padding: 20px 0;
+    }
+    .footer a {
+      color: #f8f9fa;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .university-item{
+      color: white;
     }
   </style>
 </head>
 <body>
-  <!-- Header -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+   <!-- Header -->
+   <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
-      <a class="navbar-brand" href="index.html">StudyAbroad</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <div>
+        <a class="navbar-brand" style="color: white;" href="index.html">
+          <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="border-color: white;"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="countries.html">Countries</a></li>
-          <li class="nav-item"><a class="nav-link" href="universities.html">Universities</a></li>
-          <li class="nav-item"><a class="nav-link" href="requirements.html">Requirements</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.html">Countries</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.html">Universities</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.html">Requirements</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="login.html">Log in</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  
 
   <!-- University List Section -->
   <div class="container university-list">
-    <h2 class="text-center">Top Universities in Australia</h2>
+    <h2 class="text-center text-white">Top Universities in Australia</h2>
     <div class="university-item d-flex justify-content-between align-items-center">
       <span>University of Melbourne</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#melbourneModal">View Courses</button>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#melbourneModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
       <span>University of Sydney</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#sydneyModal">View Courses</button>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#sydneyModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
       <span>Australian National University (ANU)</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#anuModal">View Courses</button>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#anuModal">View Courses</button>
     </div>
   </div>
 
@@ -134,12 +194,12 @@
 
   <!-- Cost of Living Section -->
   <section class="container cost-living-section">
-    <h2>Cost of Living & Facilities</h2>
+    <h2 class="text-light">Cost of Living & Facilities</h2>
     <div class="row">
       <!-- Cost of Living -->
       <div class="col-md-6">
         <div class="card shadow">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Cost of Living">
+          <img src="/images/coLA.webp" class="card-img-top" alt="Cost of Living">
           <div class="card-body">
             <h5 class="card-title">Cost of Living</h5>
             <ul>
@@ -155,7 +215,7 @@
       <!-- Facilities -->
       <div class="col-md-6">
         <div class="card shadow">
-          <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Facilities">
+          <img src="/images/facAU.jpg" class="card-img-top" alt="Facilities">
           <div class="card-body">
             <h5 class="card-title">Facilities</h5>
             <ul>
@@ -171,9 +231,9 @@
   </section>
 
   <!-- Steps to Study -->
-  <section class="py-5 bg-light">
+  <section class="py-5">
     <div class="container">
-      <h2 class="section-title">Steps to Study in Australia</h2>
+      <h2 class="section-title text-white">Steps to Study in Australia</h2>
       <ol class="list-group list-group-numbered">
         <li class="list-group-item">Research universities and programs.</li>
         <li class="list-group-item">Prepare for English proficiency tests (IELTS/TOEFL).</li>
@@ -184,6 +244,19 @@
       </ol>
     </div>
   </section>
+
+   <!-- Footer -->
+     
+   <footer class="footer text-center ">
+    <div class="container">
+      <p>&copy; 2024 GlobeScholar. All Rights Reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Use</a>
+      </p>
+    </div>
+  </footer>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
