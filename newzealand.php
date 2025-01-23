@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sweden Universities</title>
+  <title>New Zealand Universities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="icon" href="favicon.png" type="image/x-icon">
     
@@ -40,7 +40,7 @@
   <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
       <div>
-        <a class="navbar-brand" style="color: white;" href="index.html">
+        <a class="navbar-brand" style="color: white;" href="index.php">
           <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
       <button 
         class="navbar-toggler" 
@@ -66,79 +66,80 @@
       </div>
     </div>
   </nav>
+
   <!-- University List Section -->
   <div class="container university-list">
-    <h2 class="text-center">Top Universities in Sweden</h2>
+    <h2 class="text-center">Top Universities in New Zealand</h2>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>Karolinska Institute</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#karolinskaModal">View Courses</button>
+      <span>University of Auckland</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#aucklandModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>Stockholm University</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#stockholmModal">View Courses</button>
+      <span>University of Otago</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#otagoModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>Lund University</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#lundModal">View Courses</button>
+      <span>Victoria University of Wellington</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#victoriaModal">View Courses</button>
     </div>
   </div>
 
   <!-- Modals -->
 
-  <!-- Karolinska Institute Modal -->
-  <div class="modal fade" id="karolinskaModal" tabindex="-1" aria-labelledby="karolinskaModalLabel" aria-hidden="true">
+  <!-- Auckland Modal -->
+  <div class="modal fade" id="aucklandModal" tabindex="-1" aria-labelledby="aucklandModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="karolinskaModalLabel">Karolinska Institute - Available Courses</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>Medicine</li>
-            <li>Biotechnology</li>
-            <li>Public Health</li>
-            <li>Dental Surgery</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Stockholm University Modal -->
-  <div class="modal fade" id="stockholmModal" tabindex="-1" aria-labelledby="stockholmModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="stockholmModalLabel">Stockholm University - Available Courses</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>Computer Science</li>
-            <li>Physics</li>
-            <li>Environmental Science</li>
-            <li>Law</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Lund University Modal -->
-  <div class="modal fade" id="lundModal" tabindex="-1" aria-labelledby="lundModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="lundModalLabel">Lund University - Available Courses</h5>
+          <h5 class="modal-title" id="aucklandModalLabel">University of Auckland - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
             <li>Engineering</li>
+            <li>Health Sciences</li>
+            <li>Computer Science</li>
+            <li>Business and Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Otago Modal -->
+  <div class="modal fade" id="otagoModal" tabindex="-1" aria-labelledby="otagoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="otagoModalLabel">University of Otago - Available Courses</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Law</li>
             <li>Arts</li>
+            <li>Science</li>
             <li>Medicine</li>
-            <li>International Relations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Victoria Modal -->
+  <div class="modal fade" id="victoriaModal" tabindex="-1" aria-labelledby="victoriaModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="victoriaModalLabel">Victoria University of Wellington - Available Courses</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Environmental Science</li>
+            <li>Media and Communications</li>
+            <li>Engineering</li>
+            <li>Architecture</li>
           </ul>
         </div>
       </div>
@@ -156,10 +157,10 @@
           <div class="card-body">
             <h5 class="card-title">Cost of Living</h5>
             <ul>
-              <li>Monthly Rent: SEK 7,000 - SEK 12,000</li>
-              <li>Groceries: SEK 2,000 - SEK 4,000</li>
-              <li>Transportation: SEK 300 - SEK 600</li>
-              <li>Utilities: SEK 500 - SEK 1,000</li>
+              <li>Monthly Rent: NZD 900 - NZD 1,800</li>
+              <li>Groceries: NZD 250 - NZD 450</li>
+              <li>Transportation: NZD 100 - NZD 150</li>
+              <li>Utilities: NZD 100 - NZD 200</li>
             </ul>
           </div>
         </div>
@@ -172,10 +173,10 @@
           <div class="card-body">
             <h5 class="card-title">Facilities</h5>
             <ul>
+              <li>Scholarships</li>
               <li>Student Housing</li>
               <li>Health Insurance</li>
               <li>Work Opportunities</li>
-              <li>International Scholarships</li>
             </ul>
           </div>
         </div>
@@ -186,14 +187,14 @@
   <!-- Steps to Study -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title">Steps to Study in Sweden</h2>
+      <h2 class="section-title">Steps to Study in New Zealand</h2>
       <ol class="list-group list-group-numbered">
         <li class="list-group-item">Research universities and programs.</li>
         <li class="list-group-item">Pass English language tests (IELTS/TOEFL).</li>
-        <li class="list-group-item">Apply directly through university websites or via University Admissions Sweden.</li>
-        <li class="list-group-item">Submit proof of financial support (for tuition and living expenses).</li>
-        <li class="list-group-item">Apply for a residence permit for studies.</li>
-        <li class="list-group-item">Arrange for accommodation and health insurance.</li>
+        <li class="list-group-item">Apply directly to universities or through the New Zealand Qualifications Authority (NZQA).</li>
+        <li class="list-group-item">Provide evidence of financial support for tuition and living costs.</li>
+        <li class="list-group-item">Apply for a student visa.</li>
+        <li class="list-group-item">Arrange accommodation and healthcare insurance.</li>
       </ol>
     </div>
   </section>

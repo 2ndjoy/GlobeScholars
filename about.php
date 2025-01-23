@@ -77,7 +77,7 @@
   <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
       <div>
-        <a class="navbar-brand" style="color: white;" href="index.html">
+        <a class="navbar-brand" style="color: white;" href="index.php">
           <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
       <button 
         class="navbar-toggler" 
@@ -127,17 +127,17 @@
         <h3>Meet Our Team</h3>
         <div class="row">
           <div class="col-md-4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9-ug7uucnWzHXXS54O8MIxvOQOv2JrAGjqQ&s" alt="Team Member 1">
+            <img src="https://encrypted-tbn0.gstatic.comimages?q=tbn:ANd9GcT9-ug7uucnWzHXXS54O8MIxvOQOv2JrAGjqQ&s" alt="Team Member 1">
             <h4>Ragnar Lothbrok</h4>
             <p>Founder & CEO</p>
           </div>
           <div class="col-md-4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXjcxhXuS0c0jxqqveGTZ2cQ85SoDDqt_k_w&s" alt="Team Member 2">
+            <img src="https://encrypted-tbn0.gstatic.comimages?q=tbn:ANd9GcSXjcxhXuS0c0jxqqveGTZ2cQ85SoDDqt_k_w&s" alt="Team Member 2">
             <h4>Hannibal Lecter</h4>
             <p>Lead Consultant</p>
           </div>
           <div class="col-md-4">
-            <img src="https://static.tvtropes.org/pmwiki/pub/images/saul_goodman.jpg" alt="Team Member 3">
+            <img src="https://static.tvtropes.org/pmwiki/pubimages/saul_goodman.jpg" alt="Team Member 3">
             <h4>Saul Goodman</h4>
             <p>Head of Marketing</p>
           </div>

@@ -12,7 +12,7 @@
 <style>
      .hero {
       background: linear-gradient(rgba(0, 102, 51, 0.6), rgba(0, 102, 51, 0.6)), 
-                  url('/images/University\ of\ Toronto.jpg') no-repeat center center/cover;
+                  url('images/University\ of\ Toronto.jpg') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 100px 20px;
@@ -60,8 +60,8 @@
     <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container">
           <div>
-            <a class="navbar-brand" style="color: white;" href="index.html">
-              <img src="/logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
+            <a class="navbar-brand" style="color: white;" href="index.php">
+              <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
           <button 
             class="navbar-toggler" 
             type="button" 

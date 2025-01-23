@@ -57,8 +57,8 @@
     <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
         <div class="container">
           <div>
-            <a class="navbar-brand" style="color: white;" href="index.html">
-              <img src="/logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
+            <a class="navbar-brand" style="color: white;" href="index.php">
+              <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
           <button 
             class="navbar-toggler" 
             type="button" 

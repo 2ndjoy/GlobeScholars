@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>University of Amsterdam</title>
+  <title>Australian National University</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
@@ -12,7 +12,7 @@
 <style>
     .hero {
       background: linear-gradient(rgba(0, 102, 51, 0.6), rgba(0, 102, 51, 0.6)), 
-                  url('/images/University\ of\ Amsterdam.jpg') no-repeat center center/cover;
+                  url('images/Australian\ National\ University.jpg') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 100px 20px;
@@ -56,11 +56,11 @@
   </style>
 </head>
 <body>
-    <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
+  <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
       <div>
-        <a class="navbar-brand" style="color: white;" href="index.html">
-          <img src="/logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
+        <a class="navbar-brand" style="color: white;" href="index.php">
+          <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
       <button 
         class="navbar-toggler" 
         type="button" 
@@ -85,12 +85,11 @@
       </div>
     </div>
   </nav>
-  
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>University of Amsterdam</h1>
-    <p class="mt-3">Explore courses, requirements, and expert guidance for your journey.</p>
+    <h1>Australian National University</h1>
+    <p class="mt-3">Discover your academic journey at one of the world's best universities.</p>
     <button class="btn btn-find-agency mt-3" data-bs-toggle="modal" data-bs-target="#agencyModal">Find an Agency</button>
   </section>
 
@@ -102,24 +101,24 @@
         <div class="col-md-4">
           <div class="card shadow">
             <div class="card-body text-center">
-              <h5 class="card-title">Psychology</h5>
-              <p class="card-text">Understand the human mind and behavior in a global context.</p>
+              <h5 class="card-title">Data Science</h5>
+              <p class="card-text">Learn cutting-edge techniques in data analysis and machine learning.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
             <div class="card-body text-center">
-              <h5 class="card-title">Economics</h5>
-              <p class="card-text">Learn about global markets, policies, and financial systems.</p>
+              <h5 class="card-title">International Relations</h5>
+              <p class="card-text">Explore global politics and diplomacy at a top-ranked school.</p>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
             <div class="card-body text-center">
-              <h5 class="card-title">Media Studies</h5>
-              <p class="card-text">Explore modern communication, culture, and digital transformation.</p>
+              <h5 class="card-title">Environmental Science</h5>
+              <p class="card-text">Study climate change and sustainable solutions in Australia's capital.</p>
             </div>
           </div>
         </div>
@@ -132,11 +131,11 @@
     <div class="container">
       <h2 class="section-title">Admission Requirements</h2>
       <ul class="list-group">
-        <li class="list-group-item">High school diploma or equivalent</li>
+        <li class="list-group-item">High school certificate or equivalent</li>
         <li class="list-group-item">Proof of English proficiency (TOEFL/IELTS)</li>
-        <li class="list-group-item">Statement of Purpose (SOP)</li>
-        <li class="list-group-item">Curriculum Vitae (CV)</li>
-        <li class="list-group-item">Portfolio (if applicable)</li>
+        <li class="list-group-item">Academic transcripts</li>
+        <li class="list-group-item">Personal Statement or Statement of Purpose (SOP)</li>
+        <li class="list-group-item">Letters of recommendation</li>
       </ul>
     </div>
   </section>
@@ -169,8 +168,7 @@
             <a href="agencies.html">
               <button type="button" class="btn btn-find-agency w-100">Search</button>
             
-             </a>
-             </form>
+             </a> </form>
         </div>
       </div>
     </div>
@@ -186,6 +184,7 @@
       </p>
     </div>
   </footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

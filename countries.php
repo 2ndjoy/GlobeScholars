@@ -64,7 +64,7 @@
   <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
       <div>
-        <a class="navbar-brand" style="color: white;" href="index.html">
+        <a class="navbar-brand" style="color: white;" href="index.php">
           <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
       <button 
         class="navbar-toggler" 
@@ -80,12 +80,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.html">Countries</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.html">Universities</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.html">Requirements</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="login.html">Log in</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.php">Countries</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.php">Universities</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.php">Requirements</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.php">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="about.php">About</a></li>
+          <li class="nav-item"><a class="nav-link" style="color: white;" href="login.php">Log in</a></li>
         </ul>
       </div>
     </div>
@@ -98,82 +98,82 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/usa.jpg" class="card-img-top" alt="USA">
+            <img src="images/usa.jpg" class="card-img-top" alt="USA">
             <div class="card-body text-center">
               <h5 class="card-title">United States</h5>
               <p class="card-text">Leading destination for higher education.</p>
-              <a href="usa.html" class="btn btn-success mt-2">See More</a>
+              <a href="usa.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/uk.jpg" class="card-img-top" alt="UK">
+            <img src="images/uk.jpg" class="card-img-top" alt="UK">
             <div class="card-body text-center">
               <h5 class="card-title">United Kingdom</h5>
               <p class="card-text">Home to prestigious universities like Oxford.</p>
-              <a href="uk.html" class="btn btn-success mt-2">See More</a>
+              <a href="uk.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/canada.jpg" class="card-img-top" alt="Canada">
+            <img src="images/canada.jpg" class="card-img-top" alt="Canada">
             <div class="card-body text-center">
               <h5 class="card-title">Canada</h5>
               <p class="card-text">Affordable education and multicultural society.</p>
-              <a href="canada.html" class="btn btn-success mt-2">See More</a>
+              <a href="canada.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/australiaImgHome.jpg" class="card-img-top" alt="Canada">
+            <img src="images/australiaImgHome.jpg" class="card-img-top" alt="Canada">
             <div class="card-body text-center">
               <h5 class="card-title">Australia</h5>
               <p class="card-text">Affordable education and multicultural society.</p>
-              <a href="australia.html" class="btn btn-success mt-2">See More</a>
+              <a href="australia.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/netherland.jpg" class="card-img-top" alt="Canada">
+            <img src="images/netherland.jpg" class="card-img-top" alt="Canada">
             <div class="card-body text-center">
               <h5 class="card-title">Netherland</h5>
               <p class="card-text">Affordable education and multicultural society.</p>
-              <a href="netherland.html" class="btn btn-success mt-2">See More</a>
+              <a href="netherland.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/newland.jpg" class="card-img-top" alt="Canada">
+            <img src="images/newland.jpg" class="card-img-top" alt="Canada">
             <div class="card-body text-center">
               <h5 class="card-title">New Zealand</h5>
               <p class="card-text">Affordable education and multicultural society.</p>
-              <a href="newzealand.html" class="btn btn-success mt-2">See More</a>
+              <a href="newzealand.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/sweden.jpg" class="card-img-top" alt="Canada">
+            <img src="images/sweden.jpg" class="card-img-top" alt="Canada">
             <div class="card-body text-center">
               <h5 class="card-title">Sweden</h5>
               <p class="card-text">Affordable education and multicultural society.</p>
-              <a href="sweden.html" class="btn btn-success mt-2">See More</a>
+              <a href="sweden.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>
         
         <div class="col-md-4">
           <div class="card shadow">
-            <img src="/images/germany.jpg" class="card-img-top" alt="Canada">
+            <img src="images/germany.jpg" class="card-img-top" alt="Canada">
             <div class="card-body text-center">
               <h5 class="card-title">Germany</h5>
               <p class="card-text">Affordable education and multicultural society.</p>
-              <a href="germany.html" class="btn btn-success mt-2">See More</a>
+              <a href="germany.php" class="btn btn-success mt-2">See More</a>
             </div>
           </div>
         </div>

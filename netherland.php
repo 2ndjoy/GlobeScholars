@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canada Universities</title>
+  <title>Netherlands Universities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="icon" href="favicon.png" type="image/x-icon">
     
@@ -16,7 +16,7 @@
       padding: 15px 0;
     }
     .modal-header {
-      background-color: #198754;
+      background-color: #0d6efd;
       color: white;
     }
     .cost-living-section {
@@ -40,7 +40,7 @@
   <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
       <div>
-        <a class="navbar-brand" style="color: white;" href="index.html">
+        <a class="navbar-brand" style="color: white;" href="index.php">
           <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
       <button 
         class="navbar-toggler" 
@@ -66,79 +66,80 @@
       </div>
     </div>
   </nav>
+
   <!-- University List Section -->
   <div class="container university-list">
-    <h2 class="text-center">Top Universities in Canada</h2>
+    <h2 class="text-center">Top Universities in Netherlands</h2>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>University of Toronto</span>
-      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#torontoModal">View Courses</button>
+      <span>University of Amsterdam</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#amsterdamModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>University of British Columbia (UBC)</span>
-      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#ubcModal">View Courses</button>
+      <span>Delft University of Technology</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#delftModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>McGill University</span>
-      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#mcgillModal">View Courses</button>
+      <span>Leiden University</span>
+      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#leidenModal">View Courses</button>
     </div>
   </div>
 
   <!-- Modals -->
 
-  <!-- University of Toronto Modal -->
-  <div class="modal fade" id="torontoModal" tabindex="-1" aria-labelledby="torontoModalLabel" aria-hidden="true">
+  <!-- University of Amsterdam Modal -->
+  <div class="modal fade" id="amsterdamModal" tabindex="-1" aria-labelledby="amsterdamModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="torontoModalLabel">University of Toronto - Available Courses</h5>
+          <h5 class="modal-title" id="amsterdamModalLabel">University of Amsterdam - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Computer Science</li>
-            <li>Finance and Economics</li>
-            <li>Artificial Intelligence</li>
-            <li>Health Sciences</li>
+            <li>Social Sciences</li>
+            <li>Economics</li>
+            <li>Physics</li>
+            <li>Environmental Science</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- UBC Modal -->
-  <div class="modal fade" id="ubcModal" tabindex="-1" aria-labelledby="ubcModalLabel" aria-hidden="true">
+  <!-- Delft University of Technology Modal -->
+  <div class="modal fade" id="delftModal" tabindex="-1" aria-labelledby="delftModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="ubcModalLabel">University of British Columbia - Available Courses</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <ul>
-            <li>Environmental Studies</li>
-            <li>Data Science</li>
-            <li>Psychology</li>
-            <li>Biotechnology</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- McGill Modal -->
-  <div class="modal fade" id="mcgillModal" tabindex="-1" aria-labelledby="mcgillModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="mcgillModalLabel">McGill University - Available Courses</h5>
+          <h5 class="modal-title" id="delftModalLabel">Delft University of Technology - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
             <li>Engineering</li>
-            <li>Business Administration</li>
-            <li>Human Medicine</li>
+            <li>Architecture</li>
+            <li>Computer Science</li>
+            <li>Applied Physics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Leiden University Modal -->
+  <div class="modal fade" id="leidenModal" tabindex="-1" aria-labelledby="leidenModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="leidenModalLabel">Leiden University - Available Courses</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul>
             <li>Law</li>
+            <li>Humanities</li>
+            <li>Medicine</li>
+            <li>Physics</li>
           </ul>
         </div>
       </div>
@@ -156,10 +157,10 @@
           <div class="card-body">
             <h5 class="card-title">Cost of Living</h5>
             <ul>
-              <li>Monthly Rent: $800 - $2,200 CAD</li>
-              <li>Groceries: $250 - $500 CAD</li>
-              <li>Transportation: $100 - $200 CAD</li>
-              <li>Utilities: $100 - $250 CAD</li>
+              <li>Monthly Rent: €800 - €1,500</li>
+              <li>Groceries: €250 - €400</li>
+              <li>Transportation: €70 - €100</li>
+              <li>Utilities: €150 - €300</li>
             </ul>
           </div>
         </div>
@@ -172,10 +173,10 @@
           <div class="card-body">
             <h5 class="card-title">Facilities</h5>
             <ul>
-              <li>Scholarships</li>
+              <li>Student Housing</li>
               <li>Health Insurance</li>
-              <li>Work-Study Programs</li>
-              <li>Student Support Services</li>
+              <li>Work Opportunities</li>
+              <li>International Scholarships</li>
             </ul>
           </div>
         </div>
@@ -186,14 +187,14 @@
   <!-- Steps to Study -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title">Steps to Study in Canada</h2>
+      <h2 class="section-title">Steps to Study in Netherlands</h2>
       <ol class="list-group list-group-numbered">
-        <li class="list-group-item">Select a university and program.</li>
-        <li class="list-group-item">Pass English/French language tests (IELTS/TOEFL/TEF).</li>
-        <li class="list-group-item">Apply for admission through university portals.</li>
-        <li class="list-group-item">Demonstrate proof of financial stability.</li>
-        <li class="list-group-item">Apply for a study permit (student visa).</li>
-        <li class="list-group-item">Plan for housing and health insurance.</li>
+        <li class="list-group-item">Research universities and programs.</li>
+        <li class="list-group-item">Pass English language tests (IELTS/TOEFL).</li>
+        <li class="list-group-item">Apply directly through university websites or via Study in Netherlands portal.</li>
+        <li class="list-group-item">Submit proof of financial support (for tuition and living expenses).</li>
+        <li class="list-group-item">Apply for a residence permit for studies.</li>
+        <li class="list-group-item">Arrange for accommodation and health insurance.</li>
       </ol>
     </div>
   </section>

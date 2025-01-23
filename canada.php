@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Zealand Universities</title>
+  <title>Canada Universities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="icon" href="favicon.png" type="image/x-icon">
     
@@ -16,7 +16,7 @@
       padding: 15px 0;
     }
     .modal-header {
-      background-color: #0d6efd;
+      background-color: #198754;
       color: white;
     }
     .cost-living-section {
@@ -40,7 +40,7 @@
   <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
       <div>
-        <a class="navbar-brand" style="color: white;" href="index.html">
+        <a class="navbar-brand" style="color: white;" href="index.php">
           <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
       <button 
         class="navbar-toggler" 
@@ -66,80 +66,79 @@
       </div>
     </div>
   </nav>
-
   <!-- University List Section -->
   <div class="container university-list">
-    <h2 class="text-center">Top Universities in New Zealand</h2>
+    <h2 class="text-center">Top Universities in Canada</h2>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>University of Auckland</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#aucklandModal">View Courses</button>
+      <span>University of Toronto</span>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#torontoModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>University of Otago</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#otagoModal">View Courses</button>
+      <span>University of British Columbia (UBC)</span>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#ubcModal">View Courses</button>
     </div>
     <div class="university-item d-flex justify-content-between align-items-center">
-      <span>Victoria University of Wellington</span>
-      <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#victoriaModal">View Courses</button>
+      <span>McGill University</span>
+      <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#mcgillModal">View Courses</button>
     </div>
   </div>
 
   <!-- Modals -->
 
-  <!-- Auckland Modal -->
-  <div class="modal fade" id="aucklandModal" tabindex="-1" aria-labelledby="aucklandModalLabel" aria-hidden="true">
+  <!-- University of Toronto Modal -->
+  <div class="modal fade" id="torontoModal" tabindex="-1" aria-labelledby="torontoModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="aucklandModalLabel">University of Auckland - Available Courses</h5>
+          <h5 class="modal-title" id="torontoModalLabel">University of Toronto - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Engineering</li>
-            <li>Health Sciences</li>
             <li>Computer Science</li>
-            <li>Business and Management</li>
+            <li>Finance and Economics</li>
+            <li>Artificial Intelligence</li>
+            <li>Health Sciences</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Otago Modal -->
-  <div class="modal fade" id="otagoModal" tabindex="-1" aria-labelledby="otagoModalLabel" aria-hidden="true">
+  <!-- UBC Modal -->
+  <div class="modal fade" id="ubcModal" tabindex="-1" aria-labelledby="ubcModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="otagoModalLabel">University of Otago - Available Courses</h5>
+          <h5 class="modal-title" id="ubcModalLabel">University of British Columbia - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Law</li>
-            <li>Arts</li>
-            <li>Science</li>
-            <li>Medicine</li>
+            <li>Environmental Studies</li>
+            <li>Data Science</li>
+            <li>Psychology</li>
+            <li>Biotechnology</li>
           </ul>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Victoria Modal -->
-  <div class="modal fade" id="victoriaModal" tabindex="-1" aria-labelledby="victoriaModalLabel" aria-hidden="true">
+  <!-- McGill Modal -->
+  <div class="modal fade" id="mcgillModal" tabindex="-1" aria-labelledby="mcgillModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="victoriaModalLabel">Victoria University of Wellington - Available Courses</h5>
+          <h5 class="modal-title" id="mcgillModalLabel">McGill University - Available Courses</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <ul>
-            <li>Environmental Science</li>
-            <li>Media and Communications</li>
             <li>Engineering</li>
-            <li>Architecture</li>
+            <li>Business Administration</li>
+            <li>Human Medicine</li>
+            <li>Law</li>
           </ul>
         </div>
       </div>
@@ -157,10 +156,10 @@
           <div class="card-body">
             <h5 class="card-title">Cost of Living</h5>
             <ul>
-              <li>Monthly Rent: NZD 900 - NZD 1,800</li>
-              <li>Groceries: NZD 250 - NZD 450</li>
-              <li>Transportation: NZD 100 - NZD 150</li>
-              <li>Utilities: NZD 100 - NZD 200</li>
+              <li>Monthly Rent: $800 - $2,200 CAD</li>
+              <li>Groceries: $250 - $500 CAD</li>
+              <li>Transportation: $100 - $200 CAD</li>
+              <li>Utilities: $100 - $250 CAD</li>
             </ul>
           </div>
         </div>
@@ -174,9 +173,9 @@
             <h5 class="card-title">Facilities</h5>
             <ul>
               <li>Scholarships</li>
-              <li>Student Housing</li>
               <li>Health Insurance</li>
-              <li>Work Opportunities</li>
+              <li>Work-Study Programs</li>
+              <li>Student Support Services</li>
             </ul>
           </div>
         </div>
@@ -187,14 +186,14 @@
   <!-- Steps to Study -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="section-title">Steps to Study in New Zealand</h2>
+      <h2 class="section-title">Steps to Study in Canada</h2>
       <ol class="list-group list-group-numbered">
-        <li class="list-group-item">Research universities and programs.</li>
-        <li class="list-group-item">Pass English language tests (IELTS/TOEFL).</li>
-        <li class="list-group-item">Apply directly to universities or through the New Zealand Qualifications Authority (NZQA).</li>
-        <li class="list-group-item">Provide evidence of financial support for tuition and living costs.</li>
-        <li class="list-group-item">Apply for a student visa.</li>
-        <li class="list-group-item">Arrange accommodation and healthcare insurance.</li>
+        <li class="list-group-item">Select a university and program.</li>
+        <li class="list-group-item">Pass English/French language tests (IELTS/TOEFL/TEF).</li>
+        <li class="list-group-item">Apply for admission through university portals.</li>
+        <li class="list-group-item">Demonstrate proof of financial stability.</li>
+        <li class="list-group-item">Apply for a study permit (student visa).</li>
+        <li class="list-group-item">Plan for housing and health insurance.</li>
       </ol>
     </div>
   </section>

@@ -87,7 +87,7 @@
    <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container">
       <div>
-        <a class="navbar-brand" style="color: white;" href="index.html">
+        <a class="navbar-brand" style="color: white;" href="index.php">
           <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
       <button 
         class="navbar-toggler" 
@@ -207,7 +207,7 @@
       <!-- Cost of Living -->
       <div class="col-md-6">
         <div class="card shadow">
-          <img src="/images/coLA.webp" class="card-img-top" alt="Cost of Living">
+          <img src="images/coLA.webp" class="card-img-top" alt="Cost of Living">
           <div class="card-body">
             <h5 class="card-title">Cost of Living</h5>
             <ul>
@@ -223,7 +223,7 @@
       <!-- Facilities -->
       <div class="col-md-6">
         <div class="card shadow">
-          <img src="/images/facAU.jpg" class="card-img-top" alt="Facilities">
+          <img src="images/facAU.jpg" class="card-img-top" alt="Facilities">
           <div class="card-body">
             <h5 class="card-title">Facilities</h5>
             <ul>

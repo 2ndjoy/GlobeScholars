@@ -23,12 +23,12 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }
     .hero {
-      background: url('/images/banner.jpg') no-repeat center center/cover;
+      background: url('images/banner.jpg') no-repeat center center/cover;
       color: white;
       text-align: center;
       padding: 100px 20px;
       background: linear-gradient( rgba(102, 143, 64, 0.5),#5A6C57), 
-                url('/images/banner.jpg');
+                url('images/banner.jpg');
     background-size: cover;
     background-position: inherit;
     margin-bottom: 8vw;
@@ -80,7 +80,7 @@
 <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
   <div class="container">
     <div>
-      <a class="navbar-brand" style="color: white;" href="index.html">
+      <a class="navbar-brand" style="color: white;" href="index.php">
         <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
     <button 
       class="navbar-toggler" 
@@ -96,12 +96,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.html">Countries</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.html">Universities</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.html">Requirements</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.html">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="login.html">Log in</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.php">Countries</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.php">Universities</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.php">Requirements</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: white;" href="about.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" style="color: white;" href="login.php">Log in</a></li>
       </ul>
     </div>
   </div>
@@ -120,10 +120,10 @@
     <div class="container">
       <h2 class="section-title"style="color: white;">Preferred Study Destinations</h2>
       <div class="row">
-     <a href="usa.html" class="col-md-4 text-white text-decoration-none my-3">
+     <a href="usa.php" class="col-md-4 text-white text-decoration-none my-3">
       <div>
         <div class="card shadow">
-          <img src="/images/usaImgHome.jpg" class="card-img-top" alt="USA">
+          <img src="images/usaImgHome.jpg" class="card-img-top" alt="USA">
           <div class="card-body text-center">
             <h5 class="card-title">United States</h5>
             <p class="card-text">Top-notch education system with diverse opportunities.</p>
@@ -134,11 +134,11 @@
      </a>
 
 
-     <a href="uk.html" class="col-md-4 text-white text-decoration-none my-3">
+     <a href="uk.php" class="col-md-4 text-white text-decoration-none my-3">
     
       <div >
         <div class="card shadow">
-          <img src="/images/ukImgHome.jpg" class="card-img-top" alt="UK">
+          <img src="images/ukImgHome.jpg" class="card-img-top" alt="UK">
           <div class="card-body text-center">
             <h5 class="card-title">United Kingdom</h5>
             <p class="card-text">Prestigious universities with rich cultural heritage.</p>
@@ -148,10 +148,10 @@
      </a>
 
      
-     <a href="australia.html" class="col-md-4 text-white text-decoration-none my-3">
+     <a href="australia.php" class="col-md-4 text-white text-decoration-none my-3">
         <div>
           <div class="card shadow">
-            <img src="/images/australiaImgHome.jpg" class="card-img-top" alt="Australia">
+            <img src="images/australiaImgHome.jpg" class="card-img-top" alt="Australia">
             <div class="card-body text-center">
               <h5 class="card-title">Australia</h5>
               <p class="card-text">World-class education in a vibrant, sunny setting.</p>
@@ -170,21 +170,21 @@
       <div class="row">
 
 
-        <a href="uniOfToronto.html" class="col-md-4 text-white text-decoration-none my-3">
+        <a href="uniOfToronto.php" class="col-md-4 text-white text-decoration-none my-3">
           <div>
             <div class="card shadow">
-              <img src="/images/University of Toronto.jpg" class="card-img-top" alt="Harvard">
+              <img src="images/University of Toronto.jpg" class="card-img-top" alt="Harvard">
               <div class="card-body text-center">
                 <h5 class="card-title">University  of Toronto</h5>
               </div>
             </div>
           </div>
         </a>
-        <a href="UniOfAmst.html" class="col-md-4 text-white text-decoration-none my-3">
+        <a href="UniOfAmst.php" class="col-md-4 text-white text-decoration-none my-3">
          
         <div>
           <div class="card shadow">
-            <img src="/images/University of Amsterdam.jpg" class="card-img-top" alt="Oxford">
+            <img src="images/University of Amsterdam.jpg" class="card-img-top" alt="Oxford">
             <div class="card-body text-center">
               <h5 class="card-title">University of Amsterdam</h5>
             </div>
@@ -192,11 +192,11 @@
         </div>
         </a>
 
-        <a href="aNU.html" class="col-md-4 text-white text-decoration-none  my-3">
+        <a href="aNU.php" class="col-md-4 text-white text-decoration-none  my-3">
          
         <div>
           <div class="card shadow">
-            <img src="/images/Australian National University.jpg" class="card-img-top" alt="ANU">
+            <img src="images/Australian National University.jpg" class="card-img-top" alt="ANU">
             <div class="card-body text-center">
               <h5 class="card-title">Australian National University</h5>
             </div>
