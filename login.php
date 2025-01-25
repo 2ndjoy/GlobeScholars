@@ -1,3 +1,63 @@
+<?php
+session_start();  // Start the session
+
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Retrieve the form data
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    $errors = array();
+
+    // Validate form data
+    if (empty($email)) {
+        $errors[] = "Email is required.";
+    }
+    if (empty($password)) {
+        $errors[] = "Password is required.";
+    }
+
+    // If no errors, proceed to check credentials
+    if (empty($errors)) {
+        // Connect to the database
+        $conn = new mysqli("localhost", "root", "", "globescholardb");  // Update with your database credentials
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        // Prepare and execute query to fetch user data by email
+        $stmt = $conn->prepare("SELECT * FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        
+        // Check if user exists
+        if ($result->num_rows > 0) {
+            $user = $result->fetch_assoc();
+
+            // Verify the password using password_hash()
+            if (password_verify($password, $user['password'])) {
+                // Password is correct, set session variables
+                $_SESSION['user_id'] = $user['id'];
+                $_SESSION['user_name'] = $user['name'];
+
+                // Redirect to the dashboard page
+                header("Location: index.php");
+                exit;
+            } else {
+                $errors[] = "Incorrect password.";
+            }
+        } else {
+            $errors[] = "No user found with this email.";
+        }
+
+        // Close the connection
+        $stmt->close();
+        $conn->close();
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +65,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - GlobeScholar</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="icon" href="favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.png" type="image/x-icon">
     
-<style>
+  <style>
     body {     
       background: linear-gradient( rgba(35, 59, 12, 0.5),#323b30), 
-    url('images/logBcgrnd.webp');
-    background-size: cover;
-    background-position: inherit;
-    margin-bottom: 8vw;
+      url('images/logBcgrnd.webp');
+      background-size: cover;
+      background-position: inherit;
+      margin-bottom: 8vw;
     }
     .form-container {
       background: white;
@@ -45,12 +105,20 @@
     <div class="form-container">
       <div class="website-title">
         <a href="index.php">
-        <img src="images/Globescholar.png" style="height: 18vw;width: 17vw;" alt="Logo">
-      </a>
+          <img src="images/Globescholar.png" style="height: 18vw;width: 17vw;" alt="Logo">
+        </a>
         <div class="motto mt-2">Your journey to global education begins here</div> <!-- Motto -->
       </div> <!-- Website Title -->
       
-      <form>
+      <form action="login.php" method="POST">
+        <?php
+          // Display errors if any
+          if (!empty($errors)) {
+              foreach ($errors as $error) {
+                  echo "<p style='color: red;'>$error</p>";
+              }
+          }
+        ?>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
           <input 
@@ -73,16 +141,14 @@
             name="password" 
             placeholder="Enter your password" 
             required 
-            minlength="6" 
-            maxlength="20"
-            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,20}"
- 
-          >
+          
+           
+            >
           <div class="form-text">Password must be between 6 and 20 characters.</div>
         </div>
         <button type="submit" class="btn btn-success w-100">Login</button>
         <p class="mt-3 text-center">
-          Don't have an account? <a href="register.html">Register here</a>
+          Don't have an account? <a href="register.php">Register here</a>
         </p>
       </form>
     </div>

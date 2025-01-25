@@ -77,35 +77,9 @@
 
   <!-- Header -->
 <!-- Header -->
-<nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
-  <div class="container">
-    <div>
-      <a class="navbar-brand" style="color: white;" href="index.php">
-        <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
-    <button 
-      class="navbar-toggler" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      style="border-color: white;"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.php">Countries</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.php">Universities</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.php">Requirements</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.php">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="about.php">About</a></li>
-        <li class="nav-item"><a class="nav-link" style="color: white;" href="login.php">Log in</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+      <?php 
+      include('navbar.php')
+      ?>  
 
 
   <!-- Hero Section -->

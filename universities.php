@@ -73,114 +73,70 @@
 <body>
 
   <!-- Header -->
-  <nav style="background-color: #1F4529;" class="navbar navbar-expand-lg navbar-light shadow">
-    <div class="container">
-      <div>
-        <a class="navbar-brand" style="color: white;" href="index.php">
-          <img src="logo4.png" style="height: 8rem;width: 8rem;" class="" alt=""></a></div>
-      <button 
-        class="navbar-toggler" 
-        type="button" 
-        data-bs-toggle="collapse" 
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        style="border-color: white;"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="countries.html">Countries</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="universities.html">Universities</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="requirements.html">Requirements</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="contact.html">Contact</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" style="color: white;" href="login.html">Log in</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <?php 
+      include('navbar.php')
+      ?>  
 
+<?php
+$servername = "localhost"; // Database server
+$username = "root"; // Database username
+$password = ""; // Database password
+$database = "globescholardb"; // Database name
+
+// Create a connection
+$conn = new mysqli($servername, $username, $password, $database);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
   <!-- Universities Section -->
   <section class="py-5">
     <div class="container">
-     
-      <div class="row mt-4">
-        <!-- Harvard -->
-        <div class="col-md-4 my-3">
-          <div class="card">
-            <img src="images/havardImg.jpg" class="card-img-top" alt="Harvard">
-            <div class="card-body">
-              <h5 class="card-title">Harvard University</h5>
-              <p class="card-text">Ranked among the top globally for research and innovation.</p>
-              <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#harvardModal">View Details</button>
-            </div>
-          </div>
-        </div>
+      <div class="row">
+        <?php
+        // Fetch universities from the database
+        $sql = "SELECT * FROM universities";
+        $result = $conn->query($sql);
 
-        <!-- Stanford -->
-        <div class="col-md-4 my-3">
-          <div class="card">
-            <img src="images/stanImg.jpg" class="card-img-top" alt="Stanford">
-            <div class="card-body">
-              <h5 class="card-title">Stanford University</h5>
-              <p class="card-text">Famed for its tech focus and vibrant campus life.</p>
-              <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#stanfordModal">View Details</button>
+        if ($result->num_rows > 0) {
+          // Display each university as a card
+          while ($row = $result->fetch_assoc()) {
+            echo '
+            <div class="col-md-4 my-3">
+              <div class="card">
+                <img src="' . $row['image_url'] . '" class="card-img-top" alt="' . $row['name'] . '">
+                <div class="card-body">
+                  <h5 class="card-title">' . $row['name'] . '</h5>
+                  <p class="card-text">' . $row['description'] . '</p>
+                  <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modal' . $row['id'] . '">View Details</button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Cambridge -->
-        <div class="col-md-4 my-3">
-          <div class="card">
-            <img src="images/cambImg.jpg" class="card-img-top" alt="Cambridge">
-            <div class="card-body">
-              <h5 class="card-title">Cambridge University</h5>
-              <p class="card-text">Renowned for its academic rigor and historic appeal.</p>
-              <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#cambridgeModal">View Details</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row mt-4">
-        <!-- MIT -->
-        <div class="col-md-4 my-3">
-          <div class="card">
-            <img src="images/mitImg.jpeg" class="card-img-top" alt="MIT">
-            <div class="card-body">
-              <h5 class="card-title">MIT</h5>
-              <p class="card-text">World leader in engineering and computer science education.</p>
-              <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#mitModal">View Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Oxford -->
-        <div class="col-md-4 my-3">
-          <div class="card">
-            <img src="images/oxforImg.webp" class="card-img-top" alt="Oxford">
-            <div class="card-body">
-              <h5 class="card-title">University of Oxford</h5>
-              <p class="card-text">A timeless hub of knowledge and academic excellence.</p>
-              <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#oxfordModal">View Details</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Melbourne -->
-        <div class="col-md-4 my-3">
-          <div class="card">
-            <img src="images/MelnImg.jpg" class="card-img-top" alt="Melbourne">
-            <div class="card-body">
-              <h5 class="card-title">University of Melbourne</h5>
-              <p class="card-text">Top university in Australia with a global impact.</p>
-              <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#melbourneModal">View Details</button>
-            </div>
-          </div>
-        </div>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="modal' . $row['id'] . '" tabindex="-1" aria-labelledby="modalLabel' . $row['id'] . '" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel' . $row['id'] . '">' . $row['name'] . '</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <ul>
+                      <li>Location: ' . $row['location'] . '</li>
+                      <li>' . $row['highlights'] . '</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>';
+          }
+        } else {
+          echo '<p>No universities found.</p>';
+        }
+        ?>
       </div>
     </div>
   </section>
